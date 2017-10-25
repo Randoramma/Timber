@@ -1,0 +1,18 @@
+. Installing SFML
+
+Go to the SFML download page and follow the link to the latest stable version.
+Download the SFML libraries for your version of Xcode and place them in a suitable location.
+Use Clang for OS X 10.8 or later and GCC for older versions of Xcode.
+
+Open the Terminal application.
+The Terminal application is located in the Utilities subfolder of the Applications folder.
+
+In the Terminal window, cd to the download location.
+For example: cd Downloads
+
+Run the install script by typing: ./install.sh followed by the Enter key.
+The script will prompt you for your password and install the components correctly.
+
+More Information: http://www.cprogramming.com/xcode.html
+
+SFML and Xcode (Mac OS X):https://developer.apple.com/library/ios/technotes/tn2339/_index.html

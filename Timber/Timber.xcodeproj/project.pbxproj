@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D084028F1FA0D38B0023FA54 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = D084028E1FA0D38B0023FA54 /* ResourcePath.mm */; };
+		D08402921FA0D38B0023FA54 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D08402911FA0D38B0023FA54 /* main.cpp */; };
+		D08402DB1FA0E5E80023FA54 /* axe.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402C61FA0DF820023FA54 /* axe.png */; };
+		D08402DC1FA0E5E80023FA54 /* background.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402C71FA0DF820023FA54 /* background.png */; };
+		D08402DD1FA0E5E80023FA54 /* bee.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402C81FA0DF820023FA54 /* bee.png */; };
+		D08402DE1FA0E5E80023FA54 /* branch.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402C91FA0DF830023FA54 /* branch.png */; };
+		D08402DF1FA0E5E80023FA54 /* cloud.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402CA1FA0DF830023FA54 /* cloud.png */; };
+		D08402E01FA0E5E80023FA54 /* log.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402CB1FA0DF830023FA54 /* log.png */; };
+		D08402E11FA0E5E80023FA54 /* player.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402CC1FA0DF830023FA54 /* player.png */; };
+		D08402E21FA0E5E80023FA54 /* rip.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402CD1FA0DF830023FA54 /* rip.png */; };
+		D08402E31FA0E5E80023FA54 /* tree.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402CE1FA0DF830023FA54 /* tree.png */; };
+		D08402E41FA0E5E80023FA54 /* tree2.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402CF1FA0DF830023FA54 /* tree2.png */; };
+		D08402E71FA0E65E0023FA54 /* KOMIKAP_.ttf in Copy Fonts Files */ = {isa = PBXBuildFile; fileRef = D08402C41FA0DF700023FA54 /* KOMIKAP_.ttf */; };
+		D08402E91FA0E6840023FA54 /* chop.wav in Copy Sound Files */ = {isa = PBXBuildFile; fileRef = D08402D11FA0DF910023FA54 /* chop.wav */; };
+		D08402EA1FA0E6840023FA54 /* death.wav in Copy Sound Files */ = {isa = PBXBuildFile; fileRef = D08402D21FA0DF910023FA54 /* death.wav */; };
+		D08402EB1FA0E6840023FA54 /* out_of_time.wav in Copy Sound Files */ = {isa = PBXBuildFile; fileRef = D08402D31FA0DF910023FA54 /* out_of_time.wav */; };
+		D08402F11FA0EB4B0023FA54 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D08402F01FA0EB4B0023FA54 /* icon.png */; };
+		D08402F21FA0EB890023FA54 /* nice_music.ogg in Copy Sound Files */ = {isa = PBXBuildFile; fileRef = D08402EF1FA0EB330023FA54 /* nice_music.ogg */; };
+		D08402F31FA0EB910023FA54 /* icon.png in Copy Graphics Files */ = {isa = PBXBuildFile; fileRef = D08402F01FA0EB4B0023FA54 /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D08402D71FA0E5C10023FA54 /* Copy Graphics Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = graphics;
+			dstSubfolderSpec = 7;
+			files = (
+				D08402F31FA0EB910023FA54 /* icon.png in Copy Graphics Files */,
+				D08402DB1FA0E5E80023FA54 /* axe.png in Copy Graphics Files */,
+				D08402DC1FA0E5E80023FA54 /* background.png in Copy Graphics Files */,
+				D08402DD1FA0E5E80023FA54 /* bee.png in Copy Graphics Files */,
+				D08402DE1FA0E5E80023FA54 /* branch.png in Copy Graphics Files */,
+				D08402DF1FA0E5E80023FA54 /* cloud.png in Copy Graphics Files */,
+				D08402E01FA0E5E80023FA54 /* log.png in Copy Graphics Files */,
+				D08402E11FA0E5E80023FA54 /* player.png in Copy Graphics Files */,
+				D08402E21FA0E5E80023FA54 /* rip.png in Copy Graphics Files */,
+				D08402E31FA0E5E80023FA54 /* tree.png in Copy Graphics Files */,
+				D08402E41FA0E5E80023FA54 /* tree2.png in Copy Graphics Files */,
+			);
+			name = "Copy Graphics Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D08402E61FA0E6500023FA54 /* Copy Fonts Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = fonts;
+			dstSubfolderSpec = 7;
+			files = (
+				D08402E71FA0E65E0023FA54 /* KOMIKAP_.ttf in Copy Fonts Files */,
+			);
+			name = "Copy Fonts Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D08402E81FA0E6710023FA54 /* Copy Sound Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = sound;
+			dstSubfolderSpec = 7;
+			files = (
+				D08402F21FA0EB890023FA54 /* nice_music.ogg in Copy Sound Files */,
+				D08402E91FA0E6840023FA54 /* chop.wav in Copy Sound Files */,
+				D08402EA1FA0E6840023FA54 /* death.wav in Copy Sound Files */,
+				D08402EB1FA0E6840023FA54 /* out_of_time.wav in Copy Sound Files */,
+			);
+			name = "Copy Sound Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D08402891FA0D38B0023FA54 /* Timber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D084028D1FA0D38B0023FA54 /* Timber-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Timber-Info.plist"; sourceTree = "<group>"; };
+		D084028E1FA0D38B0023FA54 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		D08402901FA0D38B0023FA54 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		D08402911FA0D38B0023FA54 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D08402941FA0D38B0023FA54 /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		D08402961FA0D38B0023FA54 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		D08402981FA0D38B0023FA54 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		D084029A1FA0D38B0023FA54 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		D08402C41FA0DF700023FA54 /* KOMIKAP_.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KOMIKAP_.ttf; sourceTree = "<group>"; };
+		D08402C61FA0DF820023FA54 /* axe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axe.png; sourceTree = "<group>"; };
+		D08402C71FA0DF820023FA54 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		D08402C81FA0DF820023FA54 /* bee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bee.png; sourceTree = "<group>"; };
+		D08402C91FA0DF830023FA54 /* branch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = branch.png; sourceTree = "<group>"; };
+		D08402CA1FA0DF830023FA54 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		D08402CB1FA0DF830023FA54 /* log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log.png; sourceTree = "<group>"; };
+		D08402CC1FA0DF830023FA54 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		D08402CD1FA0DF830023FA54 /* rip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rip.png; sourceTree = "<group>"; };
+		D08402CE1FA0DF830023FA54 /* tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree.png; sourceTree = "<group>"; };
+		D08402CF1FA0DF830023FA54 /* tree2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree2.png; sourceTree = "<group>"; };
+		D08402D11FA0DF910023FA54 /* chop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chop.wav; sourceTree = "<group>"; };
+		D08402D21FA0DF910023FA54 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		D08402D31FA0DF910023FA54 /* out_of_time.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = out_of_time.wav; sourceTree = "<group>"; };
+		D08402EF1FA0EB330023FA54 /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		D08402F01FA0EB4B0023FA54 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D08402851FA0D38B0023FA54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D084027F1FA0D38B0023FA54 = {
+			isa = PBXGroup;
+			children = (
+				D08402D01FA0DF910023FA54 /* sound */,
+				D08402C51FA0DF820023FA54 /* graphics */,
+				D08402C31FA0DF700023FA54 /* fonts */,
+				D084028B1FA0D38B0023FA54 /* Timber */,
+				D084028A1FA0D38B0023FA54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D084028A1FA0D38B0023FA54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D08402891FA0D38B0023FA54 /* Timber.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D084028B1FA0D38B0023FA54 /* Timber */ = {
+			isa = PBXGroup;
+			children = (
+				D084028E1FA0D38B0023FA54 /* ResourcePath.mm */,
+				D08402901FA0D38B0023FA54 /* ResourcePath.hpp */,
+				D08402911FA0D38B0023FA54 /* main.cpp */,
+				D08402931FA0D38B0023FA54 /* Resources */,
+				D084028C1FA0D38B0023FA54 /* Supporting Files */,
+			);
+			path = Timber;
+			sourceTree = "<group>";
+		};
+		D084028C1FA0D38B0023FA54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D084028D1FA0D38B0023FA54 /* Timber-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D08402931FA0D38B0023FA54 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D08402941FA0D38B0023FA54 /* cute_image.jpg */,
+				D08402961FA0D38B0023FA54 /* nice_music.ogg */,
+				D08402981FA0D38B0023FA54 /* sansation.ttf */,
+				D084029A1FA0D38B0023FA54 /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D08402C31FA0DF700023FA54 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D08402C41FA0DF700023FA54 /* KOMIKAP_.ttf */,
+			);
+			name = fonts;
+			path = Timber/fonts;
+			sourceTree = "<group>";
+		};
+		D08402C51FA0DF820023FA54 /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				D08402F01FA0EB4B0023FA54 /* icon.png */,
+				D08402C61FA0DF820023FA54 /* axe.png */,
+				D08402C71FA0DF820023FA54 /* background.png */,
+				D08402C81FA0DF820023FA54 /* bee.png */,
+				D08402C91FA0DF830023FA54 /* branch.png */,
+				D08402CA1FA0DF830023FA54 /* cloud.png */,
+				D08402CB1FA0DF830023FA54 /* log.png */,
+				D08402CC1FA0DF830023FA54 /* player.png */,
+				D08402CD1FA0DF830023FA54 /* rip.png */,
+				D08402CE1FA0DF830023FA54 /* tree.png */,
+				D08402CF1FA0DF830023FA54 /* tree2.png */,
+			);
+			name = graphics;
+			path = Timber/graphics;
+			sourceTree = "<group>";
+		};
+		D08402D01FA0DF910023FA54 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				D08402EF1FA0EB330023FA54 /* nice_music.ogg */,
+				D08402D11FA0DF910023FA54 /* chop.wav */,
+				D08402D21FA0DF910023FA54 /* death.wav */,
+				D08402D31FA0DF910023FA54 /* out_of_time.wav */,
+			);
+			name = sound;
+			path = Timber/sound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D08402881FA0D38B0023FA54 /* Timber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D084029E1FA0D38B0023FA54 /* Build configuration list for PBXNativeTarget "Timber" */;
+			buildPhases = (
+				D08402841FA0D38B0023FA54 /* Sources */,
+				D08402851FA0D38B0023FA54 /* Frameworks */,
+				D08402861FA0D38B0023FA54 /* Resources */,
+				D08402871FA0D38B0023FA54 /* ShellScript */,
+				D08402D71FA0E5C10023FA54 /* Copy Graphics Files */,
+				D08402E61FA0E6500023FA54 /* Copy Fonts Files */,
+				D08402E81FA0E6710023FA54 /* Copy Sound Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timber;
+			productName = Timber;
+			productReference = D08402891FA0D38B0023FA54 /* Timber.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D08402801FA0D38B0023FA54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Randy McLain";
+				TargetAttributes = {
+					D08402881FA0D38B0023FA54 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D08402831FA0D38B0023FA54 /* Build configuration list for PBXProject "Timber" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D084027F1FA0D38B0023FA54;
+			productRefGroup = D084028A1FA0D38B0023FA54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D08402881FA0D38B0023FA54 /* Timber */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D08402861FA0D38B0023FA54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08402F11FA0EB4B0023FA54 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D08402871FA0D38B0023FA54 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/usr/local/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D08402841FA0D38B0023FA54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08402921FA0D38B0023FA54 /* main.cpp in Sources */,
+				D084028F1FA0D38B0023FA54 /* ResourcePath.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D084029C1FA0D38B0023FA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		D084029D1FA0D38B0023FA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		D084029F1FA0D38B0023FA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWRJC78833;
+				INFOPLIST_FILE = "Timber/Timber-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D08402A01FA0D38B0023FA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QWRJC78833;
+				INFOPLIST_FILE = "Timber/Timber-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D08402831FA0D38B0023FA54 /* Build configuration list for PBXProject "Timber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D084029C1FA0D38B0023FA54 /* Debug */,
+				D084029D1FA0D38B0023FA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D084029E1FA0D38B0023FA54 /* Build configuration list for PBXNativeTarget "Timber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D084029F1FA0D38B0023FA54 /* Debug */,
+				D08402A01FA0D38B0023FA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D08402801FA0D38B0023FA54 /* Project object */;
+}

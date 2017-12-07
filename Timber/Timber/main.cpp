@@ -113,8 +113,8 @@ int main(int, char const**)
     messageText.setFillColor(Color::White);
     scoreText.setFillColor(Color::White);
     
-//    Text text("TIMBER !!!", font, 50);
-//    text.setFillColor(Color::Black);
+    //    Text text("TIMBER !!!", font, 50);
+    //    text.setFillColor(Color::Black);
     
     // Place Text
     FloatRect textRect = messageText.getLocalBounds();
@@ -142,9 +142,66 @@ int main(int, char const**)
     
     bool paused = true;
     /***************************
-     
+     Prepare Branches
+     ****************************/
+    
+    Texture textureBranch;
+    textureBranch.loadFromFile(resourcePath("graphics") + "branch.png");
+    for (int i = 0; i < NUM_BRANCHES; i++)
+    {
+        branches[i].setTexture(textureBranch);
+        branches[i].setPosition(-2000, -2000);
+        // set the origin to center so we can spin it without changing its position.
+        branches[i].setOrigin(220, 20);
+    }
+    
+    /***************************
+     Build the Player graphic
+     ****************************/
+    
+    
+    Texture texturePlayer;
+    texturePlayer.loadFromFile(resourcePath("graphics") + "player.png");
+    Sprite spritePlayer;
+    spritePlayer.setTexture(texturePlayer);
+    spritePlayer.setPosition(580, 720);
+    
+    side playerSide = side::LEFT;  // player starts on L side.
+    
+    Texture textureRIP;
+    textureRIP.loadFromFile(resourcePath("graphics") + "rip.png");
+    Sprite spriteRIP;
+    spriteRIP.setTexture(textureRIP);
+    spriteRIP.setPosition(600, 860);
+    
+    Texture textureAxe;
+    textureAxe.loadFromFile(resourcePath("graphics") + "axe.png");
+    Sprite spriteAxe;
+    spriteAxe.setTexture(textureAxe);
+    spriteAxe.setPosition(700, 830);
+    
+    const float AXE_POSITION_LEFT = 700;
+    const float AXE_POSITION_RIGHT = 1075;
+    
+    Texture textureLog;
+    textureLog.loadFromFile(resourcePath("graphics") + "log.png");
+    Sprite spriteLog;
+    spriteLog.setTexture(textureLog);
+    spriteLog.setPosition(810, 720);
+    
+    bool logActive = false;
+    float logSpeedX = 1000;
+    float logSpeedY = -1500;
+    
+                               
+//    updateBranches(1);
+//    updateBranches(2);
+//    updateBranches(3);
+//    updateBranches(4);
+//    updateBranches(5);
+    
+    /***************************
      Handle User Input
-     
      ****************************/
     
     while (window.isOpen())
@@ -263,35 +320,95 @@ int main(int, char const**)
                     cloud3Active = false;
                 }
             }
-        // update Score
+            
+            /***************************
+             Update Score Text
+             ****************************/
+            
             std::stringstream ss;
             ss << "Score = " << score;
             scoreText.setString(ss.str());
-        
+            
+            /***************************
+             Update Banch sprites
+             ****************************/
+            
+            for (int i = 0; i < NUM_BRANCHES; i ++)
+            {
+                float height = i * 150;
+                if (branchPositions[i] == side::LEFT)
+                {
+                    branches[i].setPosition(610, height); // move sprite to the left side.
+                    branches[i].setRotation(180); // flip the sprite around.
+                }
+                else if (branchPositions[i] == side::RIGHT)
+                {
+                    branches[i].setPosition(1330, height); // move sprite to the right side.
+                    branches[i].setRotation(0); // set rotation to normal.
+                }
+                else
+                {
+                    branches[i].setPosition(3000, height); // hide the branches.
+                }
+                    
+                
+            }
+            
         } // paused
-    
-    /***************************
-     
-     Draw the Scene
-     
-     ***************************/
-    
-    window.clear();
-    window.draw(spriteBackground);
-    window.draw(spriteCloud1);
-    window.draw(spriteCloud2);
-    window.draw(spriteCloud3);
-    window.draw(treeSprite);
+        
+        /***************************
+         
+         Draw the Scene
+         
+         ***************************/
+        
+        window.clear();
+        window.draw(spriteBackground);
+        window.draw(spriteCloud1);
+        window.draw(spriteCloud2);
+        window.draw(spriteCloud3);
+        
+        for (int i = 0; i < NUM_BRANCHES; i++)
+        {
+            window.draw(branches[i]);
+        }
+        window.draw(treeSprite);
+        window.draw(spritePlayer);
+        window.draw(spriteAxe);
+        window.draw(spriteLog);
+        window.draw(spriteRIP); 
         window.draw(timeBar);
-    window.draw(beeSprite);
-    if (paused)
+        window.draw(beeSprite);
+        if (paused)
+        {
+            window.draw(messageText);
+        }
+        window.draw(scoreText);
+        window.display();
+    }
+    return EXIT_SUCCESS;
+}
+
+void updateBranches(int seed)
+{
+    for (int j = NUM_BRANCHES-1; j > 0; j--)
     {
-        window.draw(messageText);
+        branchPositions[j] = branchPositions[j - 1];
     }
-    window.draw(scoreText);
-    window.display();
+    // spawn new branch
+    srand((int)time(0) + seed);
+    int r = (rand() % 5);
+    switch (r) {
+        case 0:
+            branchPositions[0] = side:: LEFT;
+            break;
+        case 1:
+            branchPositions[0] = side:: RIGHT;
+            break;
+        default: //2-4
+            branchPositions[0] = side:: NONE;
+            break;
     }
-return EXIT_SUCCESS;
 }
 
 
